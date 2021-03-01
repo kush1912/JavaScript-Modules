@@ -1,0 +1,71 @@
+
+<!-- 
+    
+#Learning from Lessons 1
+
+1. Calc() function  --This is used to perform any calculation inside it.
+2. vh = visible height
+3. Css Variables
+4. overflow-y:auto  -- This property can be used to fit the overlowing text content in any section. 
+
+-->
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        /* CSS Variables */
+        * {
+            --headerFontsize:2rem;
+            --headerPadding:0.5rem;
+            --footerFontsize:1rem;
+            --footerPadding:1rem;    
+        }
+        
+        header {
+            background-color: lightgreen;
+            font-size: var(--headerFontsize);
+            padding: var(--headerPadding);
+            text-align: center;
+        }
+
+        main {
+            background-color: lightblue;
+            font-size: 1.5rem;
+            text-align: center;
+            height: calc(100vh - var(--headerFontsize) - (2*var(--headerPadding))
+                               - var(--footerFontsize) - (2*var(--footerPadding)));
+            overflow-y:auto;  /* Overflow Property*/
+        }
+
+        footer {
+            background-color: lightgreen;
+            font-size: var(--footerFontsize);
+            padding: var(--footerPadding);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <main>
+        Main
+        <br>
+        <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe laboriosam quibusdam alias. Cumque totam suscipit eligendi perspiciatis repellat itaque accusamus nam quibusdam, corporis laborum quod tempora tenetur ipsa asperiores?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam nam magnam beatae similique omnis repudiandae sapiente rem dolore autem alias, voluptate quos enim itaque incidunt nihil necessitatibus. Reiciendis, possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nihil, rem consectetur quas est dolores soluta eligendi voluptates nisi quibusdam totam asperiores nam dolore? Exercitationem libero vero a tempora sint!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi, debitis nam voluptas maiores assumenda perspiciatis necessitatibus laborum cumque alias ex consequuntur saepe quaerat nihil fuga libero nostrum sapiente omnis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis magni sunt labore adipisci vero, repudiandae assumenda minus expedita officiis hic provident vitae rerum, est esse fuga praesentium tenetur autem repellendus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio ex sunt laboriosam consequuntur, animi, temporibus suscipit ad fugit accusantium voluptates sequi facilis provident? Reiciendis, accusamus. Aliquam rem ratione labore?
+    
+    </main>
+    <footer>Footer</footer>
+
+    <script src="index.pack.js"></script>
+</body>
+
+</html>
